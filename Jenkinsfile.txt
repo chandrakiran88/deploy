@@ -14,14 +14,15 @@ pipeline{
         stage('build'){
             steps{
                 script{
-                    bat 'mvn clean install -DskipTests'
+                    sh 'mvn clean install -DskipTests'
                 }
             }
         }
         stage('deploy'){
             steps{
                 script{
-                    bat 'copy C:\\Program Files (x86)\\Jenkins\\workspace\\pipeline1\\target\\spring-boot-example2-0.0.1-SNAPSHOT.war C:\\Users\\Aarija\\Downloads\\tomcat\\apache-tomcat-9.0.21\\webapps'
+                   sh 'cp /root/.jenkins/workspace/target/spring-boot-example2-0.0.1-
+SNAPSHOT.war /tomcat/apache-tomcat-8.5.43/webapps'
                 }
             }
         }
