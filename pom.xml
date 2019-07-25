@@ -89,7 +89,7 @@
 					 </goals>  
 				            <configuration>
 						    <id>deployment</id>
-						    <name>Internal Snapshot </name
+						    <name>Internal Snapshot Releases</name
 						<url>http://localhost:8081/repository/nexus-snap/</url>
 						<packaging>war</packaging>
 					    </configuration>  
