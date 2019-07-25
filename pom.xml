@@ -86,12 +86,14 @@
                                 <version>2.8.2</version>
 					 <goals>
 						<goal>deploy</goal>
-					   </goals>  
-					<configuration>
+					 </goals>  
+				<distributionManagement>
+					<repository>
 					    <id>deployment</id>
 					    <name>Internal Snapshot Releases</name>
 					    <url>http://localhost:8081/repository/nexus-snap/</url>
-				        </configuration>
+					</repository>
+				</distributionManagement>
 			</plugin>
 		</plugins>
 	</build>
