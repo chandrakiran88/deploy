@@ -87,11 +87,13 @@
 					 <goals>
 						<goal>deploy</goal>
 					 </goals>  
-							<repository>
-							    <id>deployment</id>
-							    <name>Internal Snapshot Releases</name>
-							    <url>http://localhost:8081/repository/nexus-snap/</url>
-							</repository>
+				            <configuration>
+						    <id>deployment</id>
+						    <name>Internal Snapshot </name
+						<url>http://localhost:8081/repository/nexus-snap/</url>
+						<packaging>war</packaging>
+					    </configuration>  
+				                  
 			</plugin>
 		</plugins>
 	</build>
