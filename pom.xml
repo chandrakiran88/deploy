@@ -18,18 +18,6 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
-	<distributionManagement>
-        <repository>
-            <id>deployment</id>
-            <name>Internal Releases</name>
-            <url>http://localhost:8081/repository/maven-releases//</url>
-        </repository>
-        <snapshotRepository>
-            <id>deployment</id>
-            <name>Internal Snapshot Releases</name>
-            <url>http://localhost:8081/repository/nexus-snap//</url>
-        </snapshotRepository>
-    </distributionManagement
 
 	<dependencies>
 		<dependency>
@@ -86,6 +74,18 @@
 		</dependency>
 
 	</dependencies>
+	<distributionManagement>
+        <repository>
+            <id>deployment</id>
+            <name>Internal Releases</name>
+            <url>http://localhost:8081/repository/maven-releases//</url>
+        </repository>
+        <snapshotRepository>
+            <id>deployment</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://localhost:8081/repository/nexus-snap//</url>
+        </snapshotRepository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
