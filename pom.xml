@@ -21,10 +21,30 @@
 	            <distributionManagement>
 			    <repository>
 			      <id>deployment</id>
-			      <name>Internal Snapshot Releases</name>
+			      <name>nexus</name>
 			      <url>http://localhost:8081/repository/nexus-snap/</url>
 			    </repository>
                     </distributionManagement>
+	<repositories>
+		<repository>
+			<id>deployment</id>  
+ 				 <name>nexus</name>  
+ 				 <url>http://localhost:8081/repository/maven-public/</url> 
+			 <snapshots>  
+  				 <enabled>true</enabled>  
+ 			 </snapshots>  
+ 		</repository>  
+	</repositories>
+	<pluginRepositories>  
+ 		<pluginRepository>  
+  			<id>deployment</id>  
+  			<name>nexus</name>  
+  			<url>http://localhost:8081/repository/maven-public/</url> 
+			<snapshots>  
+   				<enabled>true</enabled>  
+ 			 </snapshots>  
+ 		</pluginRepository>  
+	</pluginRepositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
