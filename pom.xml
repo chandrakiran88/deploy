@@ -19,9 +19,9 @@
 	</properties>
 	           <distributionManagement>
 			    <snapshotRepository>
-			      <id>deployment</id>
+			      <id>nexus</id>
 			      <name>nexus</name>
-			      <url>http://localhost:8081/repository/nexus-snap/</url>
+			      <url>http://localhost:8081/repository/sample/</url>
 			    </snapshotRepository>
                     </distributionManagement> 
 	<dependencies>
