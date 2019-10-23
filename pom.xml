@@ -21,7 +21,7 @@
 			    <snapshotRepository>
 			      <id>nexus</id>
 			      <name>nexus</name>
-			      <url>http://localhost:8081/repository/sample/</url>
+			      <url>http://localhost:6060/repository/demo/</url>
 			    </snapshotRepository>
                     </distributionManagement> 
 	<dependencies>
